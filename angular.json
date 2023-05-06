@@ -25,7 +25,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bpmn-js/dist/assets/bpmn-js.css",
+              "node_modules/bpmn-js/dist/assets/diagram-js.css",
+              "node_modules/bpmn-js-properties-panel/dist/assets/element-templates.css",
+              "node_modules/bpmn-js-properties-panel/dist/assets/properties-panel.css",
+              "node_modules/bpmn-js/dist/assets/bpmn-font/css/bpmn.css",
+              "node_modules/bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css",
+              "node_modules/bpmn-js/dist/assets/bpmn-font/css/bpmn-codes.css"
             ],
             "scripts": []
           },
@@ -94,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "764728b1-040b-41dc-8cee-4c6401917cfc"
   }
 }
