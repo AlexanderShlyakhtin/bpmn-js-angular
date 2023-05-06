@@ -1,6 +1,9 @@
-# VedaBpmnAngular
+# bpmn-js Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+
+Pure template for your angular projects
+![img.png](src%2Fassets%2Fimg.png)
 
 ## Development server
 
