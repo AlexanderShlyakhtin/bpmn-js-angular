@@ -26,7 +26,6 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bpmn-js/dist/assets/bpmn-js.css",
               "node_modules/bpmn-js/dist/assets/diagram-js.css",
               "node_modules/bpmn-js-properties-panel/dist/assets/element-templates.css",
               "node_modules/bpmn-js-properties-panel/dist/assets/properties-panel.css",
@@ -73,10 +72,7 @@
               "browserTarget": "veda-bpmn-angular:build:development"
             }
           },
-          "defaultConfiguration": "development",
-          "options": {
-            "disableHostCheck": true
-          }
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

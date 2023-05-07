@@ -3,6 +3,13 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import * as BpmnJS from 'bpmn-js/dist/bpmn-modeler.production.min.js';
 import BpmnModeler from 'bpmn-js/lib/Modeler';
 import PaletteProvider from 'bpmn-js/lib/features/palette'
+import CustomPadProvider from './custom-pad-provider';
+import CustomMenuProvider from './custom-menu-provider';
+import RemovePaletteElementsModule from './custom-remove-palette';
+import CustomRenderModule from './custom-elements';
+import FormPropertiesProvider from './custom-properties-panel/form-properties-provider';
+import * as formModdleDescriptor from './custom-properties-panel/form-properties-provider/discriptors/FormModdleDescriptor.json';
+
 
 import {
   BpmnPropertiesPanelModule,
@@ -70,14 +77,19 @@ export class AppComponent implements OnInit {
       },
       keyboard: { bindTo: document },
       additionalModules: [
-        PaletteProvider,
+        CustomPadProvider,
+        CustomMenuProvider,
+        CustomRenderModule,
+        RemovePaletteElementsModule,
         BpmnPropertiesPanelModule,
         BpmnPropertiesProviderModule,
-        CamundaPlatformPropertiesProviderModule
+        FormPropertiesProvider,
+        // CamundaPlatformPropertiesProviderModule
       ],
       // needed if you'd like to maintain camunda:XXX properties in the properties panel
       moddleExtensions: {
-        camunda: CamundaModdlePackage
+        form: formModdleDescriptor
+        // camunda: CamundaModdlePackage
       }
     });
   }
